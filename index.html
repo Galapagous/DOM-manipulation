@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>A Simple Form</title>
+</head>
+<body>
+    <div class="hero">
+        <h3>A simple form page</h3>
+        <p>This is a simple demostration of DOM manipulation of a form</p>
+        <form name="techForm" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="firstname" name="fname">
+            <input type="text" placeholder="lastname" name="lname">
+            <input type="text" placeholder="Tiidelab group" name="group">
+            <div class="table_color">
+                <label for="table_color">Table background color</label>
+                <input type="color" name="bgColor">
+            </div>
+            <div class="table_color">
+                <label for="table_color">Table text color</label>
+                <input type="color"  name="textColor">
+            </div>
+            <select id="tableSize" name="size">
+                <option selected disabled>table width</option>
+                <option value="400">1</option>
+                <option value="500">2</option>
+                <option value="600">3</option>
+            </select>
+            <input type="text" placeholder="tech stack" name="stack">
+            <input type="Submit">
+        </form>
+    <h3>Kindly find the result of your survey below</h3>
+    <table>
+        <thead id="team_members">
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Tiidelab Group</th>
+            <th>Tech Stack</th>
+        </thead>
+    </table>
+    <script src="./script.js"></script>
+</div>
+</body>
+</html>
